@@ -1,0 +1,244 @@
+body {
+    background-color: #330000;
+    background-color: #1C65FF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000000' stroke-width='59.5' stroke-opacity='0.16' %3E%3Ccircle fill='%231C65FF' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%230062f2' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23005fe6' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23005cd9' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%230058cb' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%230054be' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23004fb1' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23004ba3' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23004696' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23004188' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23003c7b' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%2300376e' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23003261' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23002d54' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23002847' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%2300223b' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23031d2f' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23081824' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+
+.Introdução {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Introdução h1 {
+    font-size: 25px
+}
+
+.Calculobloco {
+    float: left;
+    height: 400px;
+    padding: 50px;
+    width: 450px;
+    margin: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.CalculoTitulo,
+.titulotabela {
+    background: rgb(116, 113, 113);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.CalculoTitulo {
+    width: 80%;
+    margin: auto;
+}
+
+#peso::placeholder,
+#altura::placeholder {
+    text-align: center;
+
+}
+
+
+.calculo {
+    text-align: center;
+    padding: 10px;
+
+}
+
+#formulario {
+    padding: 20px;
+
+}
+
+input,
+form button {
+    width: 100%;
+    margin: 5px;
+    box-sizing: border-box;
+
+}
+
+form button {
+    padding: 10px;
+}
+
+form input {
+    font-size: 13px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+
+form input:focus {
+    outline: 1px solid rgb(12, 106, 122);
+}
+
+/* esconde as setas do input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.Tabelabloco {
+    margin: 40px;
+    float: right;
+    padding: 50px;
+    width: 450px;
+    background: #ffffff;
+    height: 400px;
+    border-radius: 10px;
+}
+
+
+.resultadocalculo {
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    background-color: rgb(147, 230, 230);
+    width: 400px;
+    text-align: center;
+}
+
+button {
+    border-radius: 10px;
+    border-style: solid;
+    transition: .5;
+
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000
+
+
+}
+
+table {
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+tr {
+
+    text-align: center;
+
+
+
+}
+
+.title-imc {
+    text-align: left;
+}
+
+tr td {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+th {
+
+    border-radius: 30px;
+    background: #747171;
+    padding: 3px;
+
+
+    color: #000;
+
+}
+
+.resultadocalculo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1270px) {
+
+    .Calculobloco,
+    .Tabelabloco {
+        float: none;
+        width: 740px;
+        margin: 40px auto;
+    }
+
+    .CalculoTitulo,
+    .titulotabela {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Introdução {
+        width: 40em;
+    }
+
+    .Calculobloco,
+    .Tabelabloco {
+        float: none;
+        width: 36em;
+        margin: 40px auto;
+    }
+
+    .CalculoTitulo,
+    .titulotabela {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .Introdução {
+        width: 18em;
+    }
+
+    .Calculobloco,
+    .Tabelabloco {
+        float: none;
+        width: 15em;
+        margin: 40px auto;
+    }
+
+    .CalculoTitulo,
+    .titulotabela {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    table {
+        width: 100%;
+        font-size: .8em;
+    }
+
+    .Tabelabloco,
+    .Calculobloco {
+        height: 30em;
+    }
+}
